@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160412 00:36:49.891" generator="Robot 3.0 (Python 2.7.8 on win32)">
+<suite source="C:\Users\sree\PycharmProjects\TestProj1\Tests\PetStore-Assignment-RobotTests-SreedharGuntala.robot" id="s1" name="PetStore-Assignment-RobotTests-SreedharGuntala">
+<test id="s1-t1" name="User should able to create new pet in PetStore home page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost:3000</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160412 00:36:50.039" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
+<status status="PASS" endtime="20160412 00:36:56.437" starttime="20160412 00:36:50.038"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160412 00:36:57.290" starttime="20160412 00:36:56.438"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CREATE_BUTTON}</arg>
+<arg>timeout=10</arg>
+</arguments>
+<status status="PASS" endtime="20160412 00:36:57.377" starttime="20160412 00:36:57.291"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PET_NAME}</arg>
+<arg>${NEW_PET_NAME}</arg>
+</arguments>
+<msg timestamp="20160412 00:36:57.378" level="INFO">Typing text 'Rio Bird' into text field 'xpath=html/body/div[2]/div[2]/div/div/div/div/div[1]/div/div/form/div[1]/div/input'</msg>
+<status status="PASS" endtime="20160412 00:36:57.495" starttime="20160412 00:36:57.377"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PET_STATUS}</arg>
+<arg>${NEW_PET_STATUS}</arg>
+</arguments>
+<msg timestamp="20160412 00:36:57.496" level="INFO">Typing text 'All Sold' into text field 'xpath=html/body/div[2]/div[2]/div/div/div/div/div[1]/div/div/form/div[2]/div/input'</msg>
+<status status="PASS" endtime="20160412 00:36:57.606" starttime="20160412 00:36:57.495"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${CREATE_BUTTON}</arg>
+</arguments>
+<msg timestamp="20160412 00:36:57.606" level="INFO">Clicking button 'id=btn-create'.</msg>
+<status status="PASS" endtime="20160412 00:36:58.917" starttime="20160412 00:36:57.606"></status>
+</kw>
+<kw name="Scroll Page To Location">
+<arguments>
+<arg>0</arg>
+<arg>1000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location},${y_location})</arg>
+</arguments>
+<msg timestamp="20160412 00:36:58.919" level="INFO">Executing JavaScript:
+window.scrollTo(0,1000)</msg>
+<status status="PASS" endtime="20160412 00:36:58.944" starttime="20160412 00:36:58.919"></status>
+</kw>
+<status status="PASS" endtime="20160412 00:36:58.944" starttime="20160412 00:36:58.918"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20160412 00:37:03.945" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160412 00:37:03.945" starttime="20160412 00:36:58.945"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160412 00:37:04.064" starttime="20160412 00:37:03.945"></status>
+</kw>
+<doc>This test is for creating new pet with Pet Name and Pet Status details (User Story:US0003)</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20160412 00:37:04.066" critical="yes" starttime="20160412 00:36:50.037"></status>
+</test>
+<test id="s1-t2" name="User should able to create new pet in PetStore home page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost:3000</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160412 00:37:04.070" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
+<status status="PASS" endtime="20160412 00:37:10.397" starttime="20160412 00:37:04.070"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160412 00:37:11.277" starttime="20160412 00:37:10.398"></status>
+</kw>
+<kw name="Scroll Page To Location">
+<arguments>
+<arg>0</arg>
+<arg>1000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location},${y_location})</arg>
+</arguments>
+<msg timestamp="20160412 00:37:11.279" level="INFO">Executing JavaScript:
+window.scrollTo(0,1000)</msg>
+<status status="PASS" endtime="20160412 00:37:11.318" starttime="20160412 00:37:11.278"></status>
+</kw>
+<status status="PASS" endtime="20160412 00:37:11.318" starttime="20160412 00:37:11.277"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CREATE_BUTTON}</arg>
+<arg>timeout=10</arg>
+</arguments>
+<status status="PASS" endtime="20160412 00:37:11.400" starttime="20160412 00:37:11.319"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ROW_NUMBER_PETNAME}</arg>
+</arguments>
+<msg timestamp="20160412 00:37:11.401" level="INFO">Clicking element 'xpath=html/body/div[2]/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[3]/td[1]/span'.</msg>
+<status status="PASS" endtime="20160412 00:37:11.522" starttime="20160412 00:37:11.401"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${ROW_NUMBER_PETNAME_VALUE}</arg>
+<arg>${UPDATED_PET_NAME_TEXT}</arg>
+</arguments>
+<msg timestamp="20160412 00:37:11.523" level="INFO">Typing text 'Little Mermaid Updated' into text field 'xpath=html/body/div[2]/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[3]/td[1]/input'</msg>
+<status status="PASS" endtime="20160412 00:37:11.700" starttime="20160412 00:37:11.522"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>${ROW_NUMBER_PETNAME_VALUE}</arg>
+<arg>\\09</arg>
+</arguments>
+<status status="PASS" endtime="20160412 00:37:11.762" starttime="20160412 00:37:11.701"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ROW_NUMBER_PETSTATUS}</arg>
+</arguments>
+<msg timestamp="20160412 00:37:11.763" level="INFO">Clicking element 'xpath=html/body/div[2]/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[3]/td[2]/span'.</msg>
+<status status="PASS" endtime="20160412 00:37:11.889" starttime="20160412 00:37:11.762"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${ROW_NUMBER_PETSTATUS_VALUE}</arg>
+<arg>${UPDATED_PET_STATUS_TEXT}</arg>
+</arguments>
+<msg timestamp="20160412 00:37:11.891" level="INFO">Typing text 'Only one left Updated' into text field 'xpath=html/body/div[2]/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[3]/td[2]/input'</msg>
+<status status="PASS" endtime="20160412 00:37:12.026" starttime="20160412 00:37:11.890"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20160412 00:37:17.027" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160412 00:37:17.027" starttime="20160412 00:37:12.027"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160412 00:37:17.144" starttime="20160412 00:37:17.028"></status>
+</kw>
+<doc>This test is for creating new pet with Pet Name and Pet Status details (User Story:US0003)</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20160412 00:37:17.144" critical="yes" starttime="20160412 00:37:04.069"></status>
+</test>
+<test id="s1-t3" name="User must view the current date in PetStore home page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost:3000</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160412 00:37:17.149" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
+<status status="PASS" endtime="20160412 00:37:28.656" starttime="20160412 00:37:17.148"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160412 00:37:28.731" starttime="20160412 00:37:28.656"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Petstore webapp</arg>
+</arguments>
+<status status="PASS" endtime="20160412 00:37:28.794" starttime="20160412 00:37:28.731"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CREATE_BUTTON}</arg>
+<arg>timeout=10</arg>
+</arguments>
+<status status="PASS" endtime="20160412 00:37:28.827" starttime="20160412 00:37:28.794"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>${HEADER_BANNER_NAVIGATION}</arg>
+<arg>Hello stranger, today\'s date is :</arg>
+</arguments>
+<msg timestamp="20160412 00:37:28.828" level="INFO">Verifying element 'xpath=html/body/div[1]/div/nav/div' contains text 'Hello stranger, today's date is :'.</msg>
+<status status="PASS" endtime="20160412 00:37:28.897" starttime="20160412 00:37:28.828"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>${HEADER_BANNER_NAVIGATION}</arg>
+<arg>${CURRENT_DATE}</arg>
+</arguments>
+<msg timestamp="20160412 00:37:28.898" level="INFO">Verifying element 'xpath=html/body/div[1]/div/nav/div' contains text '12-04-2016'.</msg>
+<status status="PASS" endtime="20160412 00:37:28.934" starttime="20160412 00:37:28.898"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20160412 00:37:33.935" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160412 00:37:33.935" starttime="20160412 00:37:28.934"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160412 00:37:34.096" starttime="20160412 00:37:33.935"></status>
+</kw>
+<doc>This test is for verifying the current date display in PetStore home page</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20160412 00:37:34.097" critical="yes" starttime="20160412 00:37:17.146"></status>
+</test>
+<status status="PASS" endtime="20160412 00:37:34.099" starttime="20160412 00:36:49.894"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="3">Smoke</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="PetStore-Assignment-RobotTests-SreedharGuntala" pass="3">PetStore-Assignment-RobotTests-SreedharGuntala</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20160412 00:37:04.068" level="WARN">Multiple test cases with name 'User should able to create new pet in PetStore home page' executed in test suite 'PetStore-Assignment-RobotTests-SreedharGuntala'.</msg>
+</errors>
+</robot>
